@@ -34,7 +34,7 @@ def compare_ips():
         f = open('/tmp/ip', 'wt')
         f.write(new_ip)
         f.close
-        cmd = "/usr/bin/notify-send External-IP-Changed "+new_ip
+        cmd = "/usr/bin/notify-send 'External IP Changed' "+new_ip
         os.system(cmd)
 
 compare_ips()
